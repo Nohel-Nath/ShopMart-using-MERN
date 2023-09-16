@@ -116,8 +116,12 @@ export const logout = () => async (dispatch) => {
     /*document.cookie =
       "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";
       */
-    /*document.cookie =
-      "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";*/
+    const now = new Date();
+    const sevenDaysLater = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000); // Calculate the date 7 days from now
+
+    const formattedDate = sevenDaysLater.toUTCString(); // Format the date as a UTC string
+
+    document.cookie = `token=; expires=${formattedDate}; path=/; domain=shop-mart-xi.vercel.app;`;
   } catch (error) {
     dispatch({
       type: LOGOUT_FAIL,
