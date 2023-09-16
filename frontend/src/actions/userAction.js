@@ -108,13 +108,16 @@ export const logout = () => async (dispatch) => {
       `https://shop-mart-xi.vercel.app/user/logout`,
       config
     );
-    const token = data.token;
-    localStorage.removeItem("token", token);
+    //const token = data.token;
+    //localStorage.removeItem("token", token);
+    // Remove the token from localStorage
+    localStorage.removeItem("token");
+
     /*document.cookie =
       "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";
       */
     document.cookie =
-      "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=https://shop-mart-xi.vercel.app/;";
+      "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";
   } catch (error) {
     dispatch({
       type: LOGOUT_FAIL,
