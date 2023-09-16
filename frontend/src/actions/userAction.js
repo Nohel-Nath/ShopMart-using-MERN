@@ -110,7 +110,8 @@ export const logout = () => async (dispatch) => {
     );
     const token = data.token;
     localStorage.removeItem("token", token);
-    document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie =
+      "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";
   } catch (error) {
     dispatch({
       type: LOGOUT_FAIL,
