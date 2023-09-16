@@ -1,0 +1,185 @@
+.updateProfileContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  top: 0%;
+  left: 0;
+}
+.updateProfileBox {
+  width: 70vw;
+  height: 70vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+}
+.updateHeading {
+  height: 30px;
+  margin-left: 330px;
+  width: 400px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.205);
+  margin-top: 20px;
+}
+.updateProfileHeading {
+  color: rgba(0, 0, 0, 0.664);
+  font: 400 1.3vmax "Roboto";
+  text-align: center;
+}
+
+.updateProfileForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  transition: all 0.5s;
+  width: 60%;
+  margin-top: 70px;
+  margin-left: -515px;
+}
+
+.updateProfileForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.updateProfileForm > div > input {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 1.2vmax roboto;
+  outline: none;
+}
+
+.updateProfileForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.phoneNumberBox1 {
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  width: 100%;
+  border-radius: 4px;
+}
+.phoneNumberPrefix1 {
+  font-weight: 450;
+  align-items: center;
+  place-items: flex-center;
+  margin-left: 50px;
+  font-style: roboto;
+}
+
+#updateImage > img {
+  width: 4vmax;
+
+  border-radius: 100%;
+}
+
+#updateImage > input {
+  display: flex;
+  padding: 0%;
+  border-radius: 20px;
+}
+#updateImage > input::file-selector-button {
+  font: 400 1.2vmax Roboto;
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.9);
+}
+#updateImage > input::file-selector-button:hover {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.updateProfileBtn {
+  color: #0f1111;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  background-image: linear-gradient(#f7f8fa, #e7e9ec);
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 15px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+  align-self: flex-start;
+}
+
+.updateProfileBtn:hover {
+  border-radius: 30px;
+  border-color: black;
+  color: #0f1111;
+}
+
+@media screen and (max-width: 600px) {
+  .updateProfileContainer {
+    background-color: white;
+  }
+  .updateProfileBox {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .updateHeading {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .updateProfileForm {
+    padding: 5vmax;
+  }
+  .updateProfileHeading {
+    font: 400 3vmax "Roboto";
+    text-align: center;
+  }
+  .updateProfileForm > div {
+    margin-left: 250px;
+  }
+
+  .updateProfileForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+
+  .updateProfileForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  #updateProfileImage > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #updateProfileImage > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax cursive;
+  }
+
+  .updateProfileBtn {
+    font: 300 1.9vmax "Roboto";
+    padding: 1.8vmax;
+    margin-left: 125px;
+  }
+}

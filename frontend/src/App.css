@@ -1,0 +1,36 @@
+.slider-container {
+  margin-top: 1450px; /* Add margin-top to create space */
+}
+
+.slider-container5 {
+  margin-top: 150px;
+  /* Add margin-top to create space */
+}
+
+body {
+  cursor: url("./images/cursor.png"), auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.greenColor {
+  color: green !important;
+}
+.redColor {
+  color: red !important;
+}
+
+@media screen and (max-width: 600px) {
+  /* Styles for screens up to 768px wide */
+  .slider-container5 {
+    margin-top: 10px;
+  }
+
+  .slider-container {
+    margin-top: 350px; /* Add margin-top to create space */
+  }
+}

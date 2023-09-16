@@ -1,0 +1,58 @@
+.homeHeading2 {
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20rem;
+  padding: 1rem;
+  margin-left: 39vmax;
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-column-gap: auto;
+  margin-top: 35px;
+  width: 70vw;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 3vmax 0;
+  margin-left: 225px;
+  max-height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .homeHeading2 {
+    margin-left: 150px;
+    font-size: 5.5vmax;
+  }
+
+  .container2 {
+    margin-left: 100px;
+  }
+
+  .productCard > img {
+    width: 16vmax;
+    height: 16vmax;
+  }
+
+  .productCard > p {
+    font-size: 1.5vmax;
+  }
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}

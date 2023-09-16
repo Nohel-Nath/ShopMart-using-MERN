@@ -1,0 +1,112 @@
+.homeHeading {
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20rem;
+  padding: 1rem;
+  margin-left: 39vmax;
+  color: rgb(0, 0, 0);
+}
+.bestContainer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: auto;
+  margin-top: 70px;
+  width: 80vw;
+  justify-content: space-between;
+  gap: 3vmax 0;
+  margin-left: 200px;
+}
+.productCard {
+  width: 17vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin-left: -5vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 17vmax;
+  height: 17vmax;
+  border-radius: 20px;
+}
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.7vmax;
+  text-decoration: underline;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+  color: blue;
+}
+.productCard > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+.for-reviews {
+  margin-left: 25px;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 15px rgba(15, 15, 15, 0.26);
+  transform: translateY(-5px);
+}
+
+.priceContainer {
+  display: flex;
+}
+
+.priceContainer > span {
+  margin-left: 40%;
+  color: tomato;
+  font-size: 1.5vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .homeHeading {
+    margin-left: 150px;
+    font-size: 5.5vmax;
+  }
+
+  .bestContainer {
+    margin-left: 80px;
+  }
+
+  .productCard > img {
+    width: 16vmax;
+    height: 16vmax;
+  }
+
+  .productCard > p {
+    font-size: 1.5vmax;
+  }
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}

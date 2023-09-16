@@ -1,0 +1,325 @@
+.products {
+  width: 100%;
+  height: 1px;
+  top: 0%;
+  left: 0;
+}
+.homeHeading3 {
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20rem;
+  padding: 1rem;
+  margin-left: 39vmax;
+  color: rgb(0, 0, 0);
+}
+.noProductsContainer {
+  width: 100%;
+  height: 200px;
+}
+
+.noProductsMessage {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  /* Add any other desired styles */
+}
+
+.back-span {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 1.2vmax;
+  text-decoration: underline;
+  margin-left: 7px;
+  width: 300px;
+}
+.AllContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: auto;
+  margin-top: 70px;
+  width: 60vw;
+  justify-content: space-between;
+  gap: 3vmax 0;
+  margin-left: 400px;
+}
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+.paginationBox .pagination {
+  display: grid;
+  grid-template-columns: repeat(7, 65px);
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationBox .pagination li a {
+  background-color: white;
+  text-decoration: none; /* Remove underline */
+  font-size: 15px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70px;
+  height: 70px;
+  color: black;
+  border: 2px solid rgba(0, 0, 0, 0.178);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.paginationBox .pagination li a:hover {
+  background-color: black;
+  color: white;
+}
+.paginationBox .pagination .active a {
+  background-color: tomato;
+  color: white;
+}
+.paginationBox .pagination li:first-child a {
+  border-radius: 5px 0 0 5px;
+}
+.paginationBox .pagination li:last-child a {
+  border-radius: 0 5px 5px 0;
+}
+.filterBox {
+  width: 14vmax;
+  position: absolute;
+  top: 10vmax;
+  left: 4vmax;
+  margin-top: 100px;
+}
+.newGoBack {
+  width: 10vmax;
+  margin-top: 30px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newGoBack > Button {
+  font-size: 0; /* Hide the text content */
+  color: blue;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+.newGoBack > Button:focus {
+  outline: none; /* Remove the focus outline */
+}
+
+.newGoBack > Button > * {
+  font-size: 1.5vmax;
+}
+.newGoBack > button:hover:not(:disabled) {
+  color: black;
+  background-color: white; /* Color on hover */
+}
+
+.custom-slider .MuiSlider-valueLabel > span {
+  background: blueviolet; /* Set the background color as desired */
+  padding: 22px 22px;
+  margin-top: -10px;
+}
+.custom-slider {
+  margin-top: 25px;
+}
+
+.priceInputContainer {
+  height: 100px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 15px;
+}
+.priceContainer1 {
+  height: 55px;
+  display: flex;
+}
+.buttonContainer1 {
+  height: 40px;
+  margin-top: 10px;
+}
+.priceInputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceInput1 {
+  width: 80px;
+  font-size: 1.3vmax;
+  font-weight: 400;
+  border-radius: 5px 5px 5px 5px;
+  border: 1.8px solid rgba(0, 0, 0);
+}
+
+.priceInputSeparator {
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.priceInput2 {
+  width: 80px;
+  margin-left: 21.5px;
+  font-size: 1.3vmax;
+  font-weight: 400;
+  border-radius: 5px 5px 5px 5px;
+  border: 1.8px solid rgba(0, 0, 0);
+}
+
+.applyButton {
+  margin-top: 10px;
+  margin-left: 6px;
+  width: 200px; /* Adjust the width as needed */
+  height: 45px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: 400 1vmax "Roboto";
+  color: #0f1111;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  background-image: linear-gradient(#f7f8fa, #e7e9ec);
+}
+.applyButton:hover {
+  border-radius: 30px;
+  border-color: black;
+  color: #0f1111;
+}
+
+.priceInput1::placeholder,
+.priceInput2::placeholder {
+  font-weight: 400;
+  font-size: 1.5vmax;
+  font-style: "Arimo";
+  color: black;
+}
+.categoryBox {
+  padding: 0%;
+}
+
+.all {
+  font-size: 1.2vmax;
+  text-decoration: underline;
+  color: blue;
+  text-decoration-color: black;
+}
+.category-links {
+  display: flex;
+}
+.category-link {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.91);
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.1vmax;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.category-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-out;
+}
+.category-link:hover::after {
+  transform: scaleX(1);
+}
+
+.category-link:hover {
+  color: #fd05dc;
+}
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: blueviolet; /* Change this color to your desired underline color */
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-underline:hover::after {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 600px) {
+  .homeHeading3 {
+    margin-left: 130px;
+  }
+
+  .AllContainer {
+    margin-left: 140px;
+  }
+
+  .filterBox {
+    width: 30vmax;
+    position: static;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .custom-slider {
+    margin-left: 10px;
+  }
+  .all {
+    margin-left: 2px;
+    font-size: 1rem;
+  }
+  .category-links {
+    margin-left: 2px;
+  }
+  .category-link {
+    font-size: 1.8vmax;
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .ratings-slider {
+    margin-left: 3px;
+  }
+  .back-span {
+    font-size: 1.6vmax;
+  }
+
+  .newGoBack > Button > * {
+    font-size: 2.5vmax;
+  }
+}

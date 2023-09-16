@@ -1,0 +1,113 @@
+.Header {
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  padding-right: 15px;
+  margin: 15px;
+  cursor: "pointer";
+}
+.searchBoxHome {
+  width: 50%;
+  position: relative;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 70%;
+  background: black;
+  overflow: hidden;
+  margin-top: -38px;
+  margin-left: 210px;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+}
+
+.contactItemPhone {
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+  margin-left: 850px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contactItemPhone:hover span {
+  color: #f904c4;
+}
+
+.contactItemEMail {
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+  margin-left: 1150px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contactItemEMail:hover span {
+  color: #f904c4;
+}
+
+.contactIcon {
+  margin-right: 5px;
+}
+
+.contactText {
+  color: #555;
+  text-decoration: underline;
+}
+
+.emptySpace {
+  height: 30px; /* Adjust the height as needed */
+}
+
+.inputBox > span {
+  font-family: "Roboto";
+  animation: sliding 14s linear infinite;
+  display: block;
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(-70%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 100px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    padding-right: 10px; /* Adjust the padding as needed */
+    margin: 10px; /* Adjust the margin as needed */
+  }
+
+  .inputBox {
+    margin-top: -35px; /* Adjust the margin as needed */
+    margin-left: 120px;
+    /* Adjust the margin as needed */
+  }
+
+  .contactItemPhone {
+    margin-left: 335px;
+    font-size: 0.7rem;
+    margin-top: -20px; /* Adjust the margin as needed */
+  }
+
+  .contactItemEMail {
+    margin-left: 450px;
+    font-size: 0.7rem;
+    margin-top: -17px; /* Adjust the margin as needed */
+  }
+}

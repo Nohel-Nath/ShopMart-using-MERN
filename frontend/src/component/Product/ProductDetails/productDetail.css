@@ -1,0 +1,340 @@
+.single {
+  width: 100%;
+  height: 1px;
+}
+.slider-container1 {
+  margin-top: -100px; /* Add margin-top to create space */
+}
+
+.space1 {
+  height: 20px; /* Adjust the height to create the desired spacing */
+}
+
+.productDetails {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  position: relative;
+}
+.GoBack {
+  width: 400px;
+  height: 50px;
+  margin-left: 30px;
+  position: fixed;
+  display: flex;
+}
+
+.GoBack > button {
+  font-size: 1.7vmax;
+  color: blue;
+  background-color: white;
+  border: none;
+  margin-right: 15px;
+}
+.GoBack > button:hover:not(:disabled) {
+  color: black;
+  background-color: #f9f9f9; /* Color on hover */
+}
+
+.GoBack > span {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 1.1vmax;
+  text-decoration: underline;
+  margin-top: 15px;
+  margin-left: -12px;
+}
+
+.carousel1 {
+  height: 410px;
+  width: 420px;
+  margin-left: 9rem;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CarouselImage1 {
+  height: 410px;
+  border-radius: 20px;
+}
+
+.product {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  margin-left: 180px;
+}
+
+.detailsBlock-1 > h2 {
+  color: rgb(54, 54, 54);
+  font-family: "Arimo", sans-serif;
+  font-size: 1.5vmax;
+  text-decoration: underline;
+}
+
+.detailsBlock-1 > p {
+  color: rgba(54, 54, 54, 0.582);
+  font: 200 1.1vmax;
+  font-family: "Arimo", sans-serif;
+}
+
+.detailsBlock-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.205);
+  width: 80%;
+  padding: 1vmax 0;
+}
+
+.detailsBlock-2-span {
+  font: 200 1.2vmax;
+  font-family: "Arimo", sans-serif;
+  color: rgba(0, 0, 0, 0.699);
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.detailsBlock-3 {
+  width: 70%;
+}
+.detailsBlock-3 > h1 {
+  color: rgba(17, 17, 17, 0.795);
+  font: 400 1.8vmax;
+  margin: 1vmax 0;
+  font-family: "Arimo", sans-serif;
+}
+
+.detailsBlock-3-1 {
+  display: flex;
+  align-items: center;
+}
+
+.detailsBlock-3-1-1 > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 0.3vmax;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+.detailsBlock-3-1-1 > button:hover {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.detailsBlock-3-1-1 > input {
+  border: none;
+  margin-right: 1px;
+  margin-left: 1px;
+  width: 2vmax;
+
+  outline: none;
+
+  color: rgba(0, 0, 0, 0.74);
+}
+.number {
+  font-weight: bold;
+  font-size: 1.3vmax;
+
+  text-align: center;
+}
+
+.detailsBlock-3-1 > button:last-child {
+  cursor: pointer;
+
+  transition: all 0.5s;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  background-image: linear-gradient(#f7f8fa, #e7e9ec);
+  color: #0f1111;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "Arimo", sans-serif;
+  margin-left: 15px;
+  font-size: 0.9vmax;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.detailsBlock-3-1 > button:last-child:hover {
+  border-radius: 30px;
+  border-color: black;
+  /* Change the text color to white */
+}
+
+.detailsBlock-3 > p {
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  padding: 1vmax 0;
+  color: rgba(0, 0, 0, 0.651);
+  font: 400 1.1vmax;
+  font-family: "Arimo", sans-serif;
+  margin: 1vmax 0;
+}
+
+.detailsBlock-4 {
+  color: rgba(0, 0, 0, 0.897);
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  font-size: 1.4vmax;
+  width: 70%;
+}
+
+.detailsBlock-4 > p {
+  font-size: 0.9vmax;
+  font-weight: 400;
+  font-family: "Arimo", sans-serif;
+}
+
+.submitReview {
+  width: 10vmax;
+
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  background-image: linear-gradient(#f7f8fa, #e7e9ec);
+  color: #0f1111;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.6vmax 1vmax;
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+}
+
+.submitReview:hover {
+  border-radius: 30px;
+  border-color: black;
+}
+
+.reviewsHeading {
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+
+  margin-top: 30px;
+  text-align: center;
+  border-bottom: 1px solid black;
+
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20rem;
+  margin-left: 40%;
+  margin-top: 10vmax;
+}
+
+.reviews {
+  display: flex;
+  overflow: auto;
+}
+
+.reviewCard {
+  flex: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+  border: 1px solid rgba(56, 56, 56, 0.116);
+  width: 14vmax;
+  height: 27vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vmax;
+  margin-left: 2.1vmax;
+  margin-top: 2vmax;
+}
+
+.reviewCard > img {
+  width: 5vmax;
+}
+.reviewCard > p {
+  font-size: 0.95vmax;
+  font-weight: 500;
+}
+
+.reviewCardComment {
+  font-family: "Arimo", sans-serif;
+  color: black;
+}
+
+.noReviews {
+  font-size: 1.4vmax;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+}
+
+.submitDialog {
+  display: flex;
+  flex-direction: column;
+}
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem;
+  font: 300 1rem "Roboto";
+}
+
+@media screen and (max-width: 600px) {
+  .carousel1 {
+    height: 300px;
+    width: 250px;
+    margin-left: 30px;
+  }
+
+  .CarouselImage1 {
+    height: 300px;
+  }
+
+  .product {
+    margin-left: 25px;
+  }
+
+  .submitReview {
+    width: 25vmax;
+    font-size: 2.5vmax;
+    margin-top: 15px;
+  }
+
+  .reviewsHeading {
+    margin-top: -25vmax;
+    margin-left: 140px;
+  }
+
+  .slider-container1 {
+    margin-top: 50px;
+  }
+
+  .reviewCard > p {
+    font-size: 1vmax;
+  }
+  .reviewCardComment {
+    font-size: 1vmax;
+  }
+  .reviewCard .MuiRating-root {
+    font-size: 0.6rem; /* Adjust the font-size value as needed */
+  }
+
+  .GoBack {
+    display: flex;
+  }
+
+  .GoBack > button {
+    font-size: 2.5vmax;
+    margin-right: 15px;
+    margin-top: -20px;
+  }
+
+  .GoBack > span {
+    font-size: 1.5vmax;
+    margin-left: -15px;
+    margin-top: 10px;
+  }
+
+  .noReviews {
+    font-size: 2.5vmax;
+    margin-top: 20px;
+  }
+}

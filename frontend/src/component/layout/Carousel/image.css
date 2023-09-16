@@ -1,0 +1,83 @@
+.carousel-caption p {
+  color: #000;
+  font-weight: bold;
+}
+.carousel-caption p2 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5rem; /* Adjust the font size as needed */
+}
+.carousel-caption p1 {
+  color: white;
+  font-weight: bold;
+}
+
+.caption-content {
+  text-align: left;
+}
+
+.caption-content h2 {
+  color: #000;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: -5px;
+  font-family: Segoe Script;
+}
+.caption-content h3 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: -10px;
+  margin-left: 20px;
+}
+.caption-content h4 {
+  color: #fff;
+  font-size: 3rem;
+  margin-left: 80px;
+}
+
+.caption-content button.btn {
+  background-color: green;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 170px;
+  margin-left: 140px;
+  border-radius: 10px;
+}
+.caption-content button.btn:hover {
+  background-color: black;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .carouse {
+    width: 600px;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+  .carousel-caption p2 {
+    font-size: 0.8rem; /* Adjust the font size as needed */
+  }
+
+  .caption-content h2 {
+    font-size: 2rem;
+  }
+  .caption-content h3 {
+    font-size: 3rem;
+  }
+  .caption-content h4 {
+    font-size: 2rem;
+  }
+  .caption-content button.btn {
+    margin-left: 95px;
+  }
+}

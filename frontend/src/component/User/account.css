@@ -1,0 +1,158 @@
+.profileContainer {
+  display: flex;
+  height: 60vh;
+  width: 50%;
+  position: relative;
+  margin-left: 350px;
+  margin-top: 50px;
+}
+
+.profileContainer > div {
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profileContainer > div:first-child > h1 {
+  color: rgba(0, 0, 0);
+
+  margin-top: 200px;
+  font-weight: 500;
+  font-size: 2vmax;
+  font-style: "Roboto";
+  text-decoration: underline;
+}
+
+.profileContainer > div:first-child > img {
+  width: 22vmax;
+  border-radius: 50%;
+  margin-top: 20px;
+  height: 400px;
+}
+.profileContainer > div:first-child > img:hover {
+  transform: scale(1.1);
+}
+
+.profileContainer > div:first-child > a {
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  background-image: linear-gradient(#f7f8fa, #e7e9ec);
+  font: 400 1vmax "Roboto";
+  color: #0f1111;
+  text-decoration: none;
+  padding: 0.5vmax;
+  width: 30%;
+  transform: translateY(2.5vmax);
+  text-align: center;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+.profileContainer > div:first-child > a:hover {
+  background-color: black;
+  border-radius: 30px;
+  border-color: black;
+}
+
+.profileContainer > div:last-child {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5vmax;
+  box-sizing: border-box;
+  margin-top: 90px;
+}
+.profileContainer > div:last-child > div > h4 {
+  color: black;
+  font: 500 1.4vmax "Roboto";
+}
+.profileContainer > div:last-child > div > p {
+  color: rgba(0, 0, 0, 0.888);
+  margin: 0.2vmax;
+  font-weight: 400;
+  font-size: 1vmax;
+  font-style: "Arimo";
+}
+
+.profileContainer > div:last-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.profileContainer > div:last-child > div:last-child > a {
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  background-image: linear-gradient(#f7f8fa, #e7e9ec);
+  font: 400 1vmax "Roboto";
+  color: #0f1111;
+  text-decoration: none;
+  padding: 0.5vmax;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 1vmax 0;
+  border-radius: 10px;
+  width: 150px;
+}
+.profileContainer > div:last-child > div:last-child > a:hover {
+  border-radius: 30px;
+  background-color: #f3f4f6;
+  border-color: black;
+}
+
+.delete {
+  margin-top: 50px;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  background-image: linear-gradient(#f7f8fa, #e7e9ec);
+  font: 400 1vmax "Roboto";
+  color: #0f1111;
+  text-decoration: none;
+  padding: 0.5vmax;
+  transform: translateY(-0.1vmax);
+  text-align: center;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+.delete:hover {
+  border-radius: 30px;
+  border-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .profileContainer {
+    margin-left: 150px;
+  }
+
+  .profileContainer > div {
+    margin-top: -100px;
+  }
+
+  .profileContainer > div:last-child {
+    margin-top: 15px;
+  }
+
+  .profileContainer > div:last-child > div > h4 {
+    font: 500 2vmax "Roboto";
+  }
+  .profileContainer > div:last-child > div > p {
+    font-size: 1.5vmax;
+  }
+
+  .profileContainer > div:first-child > a {
+    width: 70%;
+    font-size: 2vmax;
+    margin-top: 20px;
+  }
+
+  .delete {
+    width: 70%;
+    font-size: 2vmax;
+  }
+  .profileContainer > div:last-child > div:last-child > a {
+    width: 120px;
+    font-size: 2vmax;
+  }
+}
