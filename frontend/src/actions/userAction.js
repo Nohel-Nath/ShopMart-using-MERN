@@ -116,8 +116,8 @@ export const logout = () => async (dispatch) => {
     /*document.cookie =
       "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";
       */
-    document.cookie =
-      "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";
+    /*document.cookie =
+      "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";*/
   } catch (error) {
     dispatch({
       type: LOGOUT_FAIL,
