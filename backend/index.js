@@ -27,7 +27,9 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 
 const PORT = process.env.PORT || 8080;
 const server = app.listen(PORT, () => {
-  console.log(`Server is running on https://shopupzone.onrender.com`);
+  console.log(`Server is running on http://localhost:${PORT}`);
+  //https://shop-mart-xi.vercel.app/
+  //console.log(`Server is running on https://shop-mart-xi.vercel.app/`);
 });
 
 process.on("uncaughtException", (err) => {

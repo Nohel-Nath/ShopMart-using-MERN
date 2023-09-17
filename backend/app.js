@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
 const corsOptions = {
   origin: "https://shop-mart-xi.vercel.app/",
+  //origin: "http://localhost:3000",
   methods: ["POST", "GET", "PUT", "DELETE"],
   credentials: true,
   optionSuccessStatus: 200,
