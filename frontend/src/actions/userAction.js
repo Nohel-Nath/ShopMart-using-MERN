@@ -123,12 +123,12 @@ export const logout = () => async (dispatch) => {
     const formattedDate = sevenDaysLater.toUTCString(); // Format the date as a UTC string
 
     document.cookie = `token=; expires=${formattedDate}; path=/; domain=shop-mart-xi.vercel.app;`;*/
-    //Cookies.remove("token");
+    Cookies.remove("token", data.token);
     //Cookies.remove("token", { domain: "shop-mart-xi.vercel.app" });
-    Cookies.remove("token", {
+    /*Cookies.remove("token", {
       domain: "https://shop-mart-xi.vercel.app/",
       value: data.token,
-    });
+    });*/
   } catch (error) {
     dispatch({
       type: LOGOUT_FAIL,
