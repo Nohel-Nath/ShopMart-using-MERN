@@ -15,7 +15,7 @@ import { logout } from "../../../actions/userAction";
 import "../Loader/loading.css";
 import Loader from "../Loader/Loading";
 import Backdrop from "@material-ui/core/Backdrop";
-
+import Cookies from "js-cookie";
 function UserOptions({ user }) {
   const [open, setOpen] = useState(false);
   const { loading } = useSelector((state) => state.user);
@@ -75,7 +75,7 @@ function UserOptions({ user }) {
   function logoutUser() {
     dispatch(logout());
     toast.success("Logout Successfully");
-
+    Cookies.remove("token");
     //localStorage.removeItem("loginCompleted");
     history.push("/");
   }

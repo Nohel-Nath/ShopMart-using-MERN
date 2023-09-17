@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.bc205843.css",
-    "main.js": "/static/js/main.a6c8eed4.js",
+    "main.js": "/static/js/main.2cda564d.js",
     "static/media/appstore.jpg": "/static/media/appstore.c8bd9fccfcf51d67416a.jpg",
     "index.html": "/index.html",
     "main.bc205843.css.map": "/static/css/main.bc205843.css.map",
-    "main.a6c8eed4.js.map": "/static/js/main.a6c8eed4.js.map"
+    "main.2cda564d.js.map": "/static/js/main.2cda564d.js.map"
   },
   "entrypoints": [
     "static/css/main.bc205843.css",
-    "static/js/main.a6c8eed4.js"
+    "static/js/main.2cda564d.js"
   ]
 }
