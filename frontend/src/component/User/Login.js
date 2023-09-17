@@ -202,7 +202,7 @@ function Login() {
     }
   };
 
-  const redirect = location.search ? location.search.split("=")[1] : "/";
+  const redirect = location.search ? location.search.split("=")[1] : "/account";
 
   useEffect(() => {
     const loginCompleted = localStorage.getItem("loginCompleted");
