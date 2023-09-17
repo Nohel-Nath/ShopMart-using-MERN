@@ -202,7 +202,7 @@ function Login() {
     }
   };
 
-  //const redirect = location.search ? location.search.split("=")[1] : "/";
+  const redirect = location.search ? location.search.split("=")[1] : "/";
 
   useEffect(() => {
     const loginCompleted = localStorage.getItem("loginCompleted");
@@ -226,9 +226,9 @@ function Login() {
     }
 
     if (isAuthenticated) {
-      navigate.push("/");
+      window.location.href = redirect;
     }
-  }, [dispatch, error, loading, isAuthenticated, navigate]);
+  }, [dispatch, error, loading, isAuthenticated, navigate, redirect]);
 
   return (
     <>
