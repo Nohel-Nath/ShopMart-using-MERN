@@ -77,7 +77,7 @@ function UserOptions({ user }) {
     toast.success("Logout Successfully");
 
     //localStorage.removeItem("loginCompleted");
-    history.push("/");
+    history.push("/login");
   }
   return (
     <>
