@@ -126,7 +126,7 @@ export const logout = () => async (dispatch) => {
     //Cookies.remove("token");
     //Cookies.remove("token", { domain: "shop-mart-xi.vercel.app" });
     Cookies.remove("token", {
-      domain: "shop-mart-xi.vercel.app",
+      domain: "https://shop-mart-xi.vercel.app/",
       value: data.token,
     });
   } catch (error) {
