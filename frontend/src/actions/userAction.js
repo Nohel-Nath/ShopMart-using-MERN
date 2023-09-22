@@ -113,7 +113,7 @@ export const logout = () => async (dispatch) => {
     //localStorage.removeItem("token", token);
     // Remove the token from localStorage
     localStorage.removeItem("token");
-
+    localStorage.clear();
     Cookies.remove("token", {
       domain: "shop-mart-xi.vercel.app",
       path: "/",
