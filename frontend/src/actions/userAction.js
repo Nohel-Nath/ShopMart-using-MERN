@@ -119,6 +119,7 @@ export const logout = () => async (dispatch) => {
       path: "/",
       secure: true,
     });
+    Cookies.clear();
 
     /*document.cookie =
       "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";
