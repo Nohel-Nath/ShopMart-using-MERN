@@ -50,12 +50,12 @@ export const loginUser = (email, password) => async (dispatch) => {
       { email, password },
       config
     );
-    const token = data.token; // Extract the token from the response data
+    //const token = data.token; // Extract the token from the response data
 
     // Save the token to local storage
-    localStorage.setItem("token", token);
+    //localStorage.setItem("token", token);
 
-    dispatch({ type: LOGIN_SUCCESS, payload: { user: data.user, token } });
+    dispatch({ type: LOGIN_SUCCESS, payload: { user: data.user } });
   } catch (error) {
     dispatch({
       type: LOGIN_FAIL,
@@ -81,14 +81,14 @@ export const registerAUser = (userData) => async (dispatch) => {
       userData,
       config
     );
-    const token = data.token; // Extract the token from the response data
+    //const token = data.token; // Extract the token from the response data
 
     // Save the token to local storage
-    localStorage.setItem("token", token);
+    // localStorage.setItem("token", token);
 
     dispatch({
       type: REGISTER_USER_SUCCESS,
-      payload: { user: data.user, token },
+      payload: { user: data.user },
     });
   } catch (error) {
     dispatch({
