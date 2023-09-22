@@ -114,6 +114,12 @@ export const logout = () => async (dispatch) => {
     // Remove the token from localStorage
     localStorage.removeItem("token");
 
+    Cookies.remove("token", {
+      domain: "shop-mart-xi.vercel.app",
+      path: "/",
+      secure: true,
+    });
+
     /*document.cookie =
       "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=shop-mart-xi.vercel.app;";
       */
@@ -123,7 +129,7 @@ export const logout = () => async (dispatch) => {
     const formattedDate = sevenDaysLater.toUTCString(); // Format the date as a UTC string
 
     document.cookie = `token=; expires=${formattedDate}; path=/; domain=shop-mart-xi.vercel.app;`;*/
-    Cookies.remove("token", data.token);
+    //Cookies.remove("token", data.token);
     //Cookies.remove("token", { domain: "shop-mart-xi.vercel.app" });
     /*Cookies.remove("token", {
       domain: "https://shop-mart-xi.vercel.app/",
